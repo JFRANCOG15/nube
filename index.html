@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Administrador de Gastos</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Control de Gastos</h1>
+
+        <div class="seccion">
+            <label>Seleccionar Fecha</label>
+
+            <select>
+                <option>Fecha Actual</option>
+                <option>Fecha Pasada</option>
+            </select>
+        </div>
+
+        <div class="seccion">
+            <label>Categoría</label>
+
+            <select>
+                <option>Alimentación</option>
+                <option>Transporte</option>
+                <option>Entretenimiento</option>
+                <option>Servicios</option>
+                <option>Salud</option>
+                <option>Otros</option>
+            </select>
+        </div>
+
+        <div class="seccion">
+            <label>Valor</label>
+
+            <input type="number" placeholder="Ingrese el valor">
+        </div>
+
+        <div class="botones">
+            <button class="sumar">+ Agregar</button>
+            <button class="restar">- Restar</button>
+        </div>
+
+        <div class="resumen">
+            <h3>Saldo Actual</h3>
+            <p class="saldo">$ 0</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
