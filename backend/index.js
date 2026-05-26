@@ -5,6 +5,6 @@ app.listen(3000, ()=> {
     console.log('cree un servidor web')
 })
 
-app.get('/jfrancog',(req,res)=>{
-    res.send('<h1>Hola soy una app de finanzas</h1>')
+app.get('/gastos',(req,res)=>{
+    
 })
