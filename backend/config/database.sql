@@ -1,4 +1,4 @@
--- Active: 1761056214612@@127.0.0.1@3306@finanzas
+-- Active: 1779800500785@@127.0.0.1@3306@finanzas
 create DATABASE Finanza
 use finanza
 

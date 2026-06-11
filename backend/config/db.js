@@ -1,12 +1,12 @@
-const mysql = requiere('mysql2') 
+const mysql = require('mysql2') 
 
 const pool = mysql.createPool(
     {
         user: 'root',
         host: 'localhost',
-        pasword: 'root',
+        password: 'root',
         port: 3306,
-        database: 'Finanza'
+        database: 'finanzas'
     }
 )
 
