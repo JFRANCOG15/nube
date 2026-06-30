@@ -1,12 +1,15 @@
-const db = require('../config/db')
+const model = require('../models/gastos.model')
 
-class GastosModel{
-    static async obtenerGastos(){
-        const [rows] = await db.query(
-            'SELECT ct.nombre, ts.monto, ts.tipo, ts.fecha FROM transacciones ts INNER JOIN categoria ct ON ts.ct_id = ct.id LIMIT 5'
-        )
-        return rows
+class GastosController{
+    static async obtenerGastos(req, res){
+        try {
+            const gastos = await model.obtenerGastos()
+            res.json(gastos) // array plano
+        } catch (error) {
+            console.error(error)
+            res.status(500).json({ error: 'Error al obtener gastos' })
+        }
     }
 }
 
-module.exports = GastosModel
+module.exports = GastosController
